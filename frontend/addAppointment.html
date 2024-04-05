@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form
+      action="/"
+      style="
+        margin: 12rem;
+        border-top: solid gainsboro 1px;
+        border-bottom: solid gainsboro 1px;
+        padding: 2rem 0;
+      "
+    >
+      <div class="lable-input" style="width: 50%; margin: auto">
+        <label for="name-input">Name</label>
+        <input
+          type="text"
+          id="name-input"
+          placeholder="Spogebob Squarepants"
+          style="padding: 0.25rem; width: 50%"
+        />
+      </div>
+      <div class="lable-input" style="width: 50%; margin: auto">
+        <label for="phone-input">Phone</label>
+        <input
+          type="tel"
+          id="phone-input"
+          placeholder="1234567890"
+          style="padding: 0.25rem; width: 50%"
+        />
+      </div>
+
+      <div class="lable-input" style="width: 50%; margin: auto">
+        <label for="visit-input">Visit Type</label>
+        <select id="visit-input" style="padding: 0.25rem; width: 50%">
+          <option value="STANDARD">Standard</option>
+          <option value="URGENT">Urgent</option>
+          <option value="FOLLOW_UP">Follow-up</option>
+        </select>
+      </div>
+
+      <div class="lable-input" style="width: 50%; margin: auto">
+        <label for="status-input">Status</label>
+        <select id="status-input" style="padding: 0.25rem; width: 50%">
+          <option value="CONFIRMED">Confirmed</option>
+          <option value="PENDING">Pending</option>
+          <option value="CANCELED">Canceled</option>
+          <option value="EXPIRED">Expired</option>
+          <option value="COMPLETED">Completed</option>
+        </select>
+      </div>
+
+      <div class="lable-input" style="width: 50%; margin: auto">
+        <label for="dr-input">Doctor</label>
+        <select
+          id="dr-input"
+          name="doctor"
+          style="padding: 0.25rem; width: 50%"
+        >
+          <option value="Dr PRAKASH RAI">Dr Prakash Rai</option>
+          <option value="Dr JAMSHED KHAN">Dr Jamshed Khan</option>
+          <option value="Dr JOSEPH NOLAN">Dr Joseph Nolan</option>
+        </select>
+      </div>
+
+      <div class="lable-input" style="width: 50%; margin: auto">
+        <label for="date-input">Date</label>
+        <input
+          type="date"
+          id="date-input"
+          style="padding: 0.25rem; width: 50%"
+        />
+      </div>
+
+      <div class="lable-input" style="width: 50%; margin: auto">
+        <label for="time-input">Time</label>
+        <input
+          type="time"
+          id="time-input"
+          style="padding: 0.25rem; width: 50%"
+        />
+      </div>
+
+      <button
+        class="simple-btn"
+        onclick="handleAddAppointment(event)"
+        style="
+          margin: 0 auto;
+          margin-top: 0.5rem;
+          background-color: cornflowerblue;
+          color: #fff;
+          descent-override: none;
+          padding: 0.5rem;
+          border-radius: 0.5rem;
+          border: solid snow 1px;
+          font-weight: 500;
+        "
+      >
+        submit
+      </button>
+    </form>
+  </body>
+</html>

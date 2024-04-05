@@ -1,0 +1,101 @@
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+table {
+  border-spacing: 0;
+  padding: 0.5rem 0;
+  margin: 2rem 0;
+}
+
+th {
+  font-weight: 500;
+  color: gray;
+}
+
+td {
+  text-align: center;
+  border-bottom: solid gainsboro 1px;
+}
+
+th,
+td {
+  padding: 0.5rem 0;
+}
+
+button {
+  text-decoration: none;
+  background-color: inherit;
+  border: none;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+.simple-btn {
+  width: fit-content;
+  border: solid gainsboro 1px;
+  border-radius: 5px;
+}
+
+ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.underline-on-hover:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: solid whitesmoke 1px;
+  padding: 1rem 2rem;
+  display: none;
+  transition: 0.25s;
+  border-radius: 5px;
+  border: solid gainsboro 1px;
+  box-shadow: 5px 5px;
+}
+
+.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+}
+
+.lable-input {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+input {
+  border: solid gainsboro 1px;
+  border-radius: 2px;
+  flex-basis: 2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
